@@ -48,3 +48,4 @@ def validate_geometry(geometry: dict) -> dict:
         raise ValidationError(GEOMETRY_TYPES_ERROR)
     if not coordinates:
         raise ValidationError(GEOMETRY_COORDINATES_ERROR)
+    return geometry
